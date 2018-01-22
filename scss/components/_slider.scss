@@ -1,0 +1,134 @@
+#react-content {
+    .swiper-container {
+        width: 90%;
+        height: 150px;
+        padding: 8px;
+
+        .swiper-wrapper {
+            .slide {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+
+                .slide-title {
+                    font-size: 28px;
+                }
+
+                .slide-text {
+                    padding-top: 10px;
+                    color: rgb(201, 52, 69);
+                    font-weight: bolder;
+                    font-size: 24px;
+                }
+            }
+
+            .slide1 {
+                background: url("../images/slider1.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: bottom;
+                border: 2px solid rgb(218, 218, 218);
+                padding-left: 20px;
+                align-items: flex-start;
+            }
+
+            .slide2 {
+                background: url("../images/slider2.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: 2px solid rgb(218, 218, 218);
+                align-items: center;
+            }
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 40px;
+            background: white;
+            color: white;
+            font-family: $main-font-family;
+            text-shadow: $main-text-shadow;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    }
+
+    .sliderContainer {
+        display: flex;
+        justify-content: center;
+        padding-top: 90px;
+    }
+}
+@media (min-width: $tablet-min-width) {
+    #react-content {
+        .swiper-container {
+            width: 50%;
+            height: 160px;
+            position: relative;
+            left: 95px;
+
+            .swiper-wrapper {
+                .slide {
+                    position: relative;
+
+                    .slide-title {
+                        font-size: 35px;
+                    }
+
+                    .slide-text {
+                        padding-top: 10px;
+                        color: rgb(201, 52, 69);
+                        font-weight: bolder;
+                        font-size: 28px;
+                    }
+                }
+
+                .slide2 {
+                    background-position: center top -10px;
+                }
+            }
+        }
+
+        .sliderContainer {
+            padding-top: 25px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+@media (min-width: $deskop-min-width) {
+    #react-content {
+        .swiper-container {
+            .swiper-wrapper {
+                .slide {
+                    .slide-title {
+                        font-size: 45px;
+                    }
+
+                    .slide-text {
+                        padding-top: 10px;
+                        color: rgb(201, 52, 69);
+                        font-weight: bolder;
+                        font-size: 30px;
+                    }
+                }
+
+                .slide1 {
+                    padding-left: 50px;
+                }
+
+                .slide2 {
+                    background-position: center top -100px;
+                }
+            }
+        }
+
+        .sliderContainer {
+            padding-top: 25px;
+            margin-bottom: 30px;
+        }
+    }
+}
